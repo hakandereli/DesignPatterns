@@ -34,4 +34,24 @@ public class Main {
 //    Doğal dil işleme: Doğal dil işleme alanında, metin tabanlı dilin yorumlanması veya analizi gerekebilir. Örneğin, metin tabanlı komutları anlamak veya doğal dildeki ifadeleri işlemek için Interpreter tasarım kalıbını kullanabilirsiniz.
 
 //    Interpreter tasarım kalıbı, karmaşık bir dilin yapısını modülerleştirerek, dilin gramerindeki değişikliklere daha kolay adapte olmanızı sağlar. Ayrıca, yeni ifadelerin eklenmesi veya mevcut ifadelerin değiştirilmesi gibi dildeki değişikliklerin etkilerini izole etmek için de kullanışlıdır. Bu, yazılım dünyasında farklı yorumlama veya derleme ihtiyaçları olan senaryolarda kullanılabilecek bir tasarım kalıbıdır.
+
+
+    /**
+     * Ben örnek olarak bir regex örneği seçtim
+     **/
+
+    public static void main(String[] args) {
+
+        //Dil bilgisi ağacını oluşturma
+        RegexExpression expression = new PatternExpression("^\\d{4}$");
+
+
+        //Yorumlayıcı oluşturma
+        RegexInterpreter regexInterpreter = new RegexInterpreter(expression);
+
+        //İfadeyi yorumlama ve sonucu alma
+        boolean result = regexInterpreter.interpret("1234");
+        System.out.println("Sonuç : " + result);
+    }
+
 }
