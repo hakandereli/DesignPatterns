@@ -1,4 +1,4 @@
-package main.java.designpatterns.structural.bridge;
+package designpatterns.structural.bridge;
 
 public class Electric implements FuelType{
     @Override

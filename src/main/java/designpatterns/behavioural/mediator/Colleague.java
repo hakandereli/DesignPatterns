@@ -15,14 +15,18 @@ public abstract class Colleague {
         this.mediator = mediator;
     }
 
+    //Kullanıcılara bildirim gönder
     public abstract void notifyColleague(String message);
 
+    //gelen messeagı alır.
     abstract void receive(String message);
 
+    //alınan mesajı döner
     public String getReceivedMessage() {
         return this.receivedMessage;
     }
 
+    //gelen mesajı setler.
     public void setReceivedMessage(String receivedMessage) {
         this.receivedMessage = receivedMessage;
     }

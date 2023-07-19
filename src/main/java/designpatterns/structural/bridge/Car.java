@@ -1,4 +1,6 @@
-package main.java.designpatterns.structural.bridge;
+
+package designpatterns.structural.bridge;
+
 
 public class Car extends Vehicle{
 

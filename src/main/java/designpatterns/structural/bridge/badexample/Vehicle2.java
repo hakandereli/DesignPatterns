@@ -1,9 +1,9 @@
-package main.java.designpatterns.structural.bridge.badexample;
+package designpatterns.structural.bridge.badexample;
 
-public class Vehicle {
+public class Vehicle2 {
     private String fuelType;
 
-    public Vehicle(String fuelType) {
+    public Vehicle2(String fuelType) {
         this.fuelType = fuelType;
     }
 

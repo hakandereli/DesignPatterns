@@ -1,7 +1,5 @@
 package designpatterns.structural.bridge;
 
-import main.java.designpatterns.structural.bridge.*;
-
 public class Main {
 
 //    Bridge tasarım kalıbı, yapısal bir tasarım kalıbıdır ve iki ayrı hiyerarşiyi birbirinden bağımsız olarak

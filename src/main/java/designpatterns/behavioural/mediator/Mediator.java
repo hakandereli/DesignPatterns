@@ -6,5 +6,6 @@ package designpatterns.behavioural.mediator;
  */
 public interface Mediator {
 
+    //Aracı mesajın ileteceği kişiye mesaj yollar.
     void notifyColleague(Colleague colleague, String message);
 }
