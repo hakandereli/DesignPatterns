@@ -26,4 +26,40 @@ public class Main {
      * Bu sayede nesneler birbirine referans vermez ve uzun vadede genişletilebilir bakımı kolay bir kod oluşmuş olur. Ancak mediator design patterninin faydaları olduğu gibi endişe veren noktaları da vardır. Mesela, bu gibi kritik işleri tek bir mediator class üzerinden yönetmek bize single point of failure yani tek nokta sıkıntısı yaşatabilir. Yani mediator classındaki herhangi bir sıkıntı tüm sistemi çökertir.
      *
      * */
+
+    /**
+     *
+     *
+     *
+     import static org.junit.Assert.assertEquals;
+
+    public class MediatorTest {
+
+        @Test
+        public void testMediator(){
+
+            //Mesajlama Ortamı oluşturuldu.
+            ConcreteMediator mediator = new ConcreteMediator();
+
+            //Kullanıcılar tanımlandı.
+            Colleague colleague1 = new ConcreteColleague1(mediator);
+            Colleague colleague2 = new ConcreteColleague2(mediator);
+
+            //Kuleye merkeze kullacılar bildirildi.
+            mediator.addColleaque(colleague1);
+            mediator.addColleaque(colleague2);
+
+            //Kullanıcı 1 kendisi hariç herkese mesajını yollar.
+            colleague1.notifyColleague("Hello from ConcreteColleague1");
+            //Kullanıcı 2 kendisi hariç herkese mesajını yollar.
+            colleague2.notifyColleague("Hello from ConcreteColleague2");
+
+            //Kullanıcı 2 nin yolladığı mesajı kullanıcı 1 in alıp almadığı kontrol ediliyor.
+            assertEquals("Hello from ConcreteColleague2",((ConcreteColleague1) colleague1).getReceivedMessage());
+            //Kullanıcı 1 nin yolladığı mesajı kullanıcı 2 in alıp almadığı kontrol ediliyor.
+            assertEquals("Hello from ConcreteColleague1",((ConcreteColleague2) colleague2).getReceivedMessage());
+        }
+    }
+
+     * */
 }
