@@ -40,4 +40,12 @@ public class Emlakci {
 
         System.out.println("Ev Eklendi -> " + ev);
     }
+
+    //Özet
+//    1- Nesne oluştururken okunurluğu artırır. Özellikle eski IDE lerde.
+//    2- Farklı isimlerde ve aynı parametre tipine sayısına ait constructorlar oluşturmanızı sağlar.
+//    3- Nesneye bir özellik daha eklendiğinde zorunlu bir alan değilse sadece o opsiyonun kullanılmak istendiği yerlerde değişiklik yeterlidir. Tümünü değiştirmek zorunda kalmazsınız.
+//    4- Nesne oluştururken kararsız nesneleri, yazılımcı unutkanlığını önler.
+//    5- Zorunlu olmayan field lara değer göndermek zorunda kalmazsınız.
+//    6- Sıraya uymadan kararlı nesneler oluşturmanızı sağları.
 }
