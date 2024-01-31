@@ -1,4 +1,9 @@
-package designpatterns.structural.bridge;
+package designpatterns.structural.bridge.goodexample;
+
+import designpatterns.structural.bridge.goodexample.fueltypes.Diesel;
+import designpatterns.structural.bridge.goodexample.fueltypes.Petrol;
+import designpatterns.structural.bridge.goodexample.vehicletypes.Car;
+import designpatterns.structural.bridge.goodexample.vehicletypes.Truck;
 
 public class Main {
 

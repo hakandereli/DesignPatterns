@@ -1,4 +1,4 @@
-package designpatterns.structural.bridge;
+package designpatterns.structural.bridge.goodexample;
 
 public abstract class Vehicle {
 
