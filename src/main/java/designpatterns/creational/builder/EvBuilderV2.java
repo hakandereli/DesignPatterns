@@ -18,8 +18,12 @@ public class EvBuilderV2 {
     private boolean hasCocukParki;
     private boolean hasKlima;
 
+    //Normal Ev için bir kalıp oluşturduk bu fieldlar zorunlu gönderilmek zorunda
+    //Dublex Ev için bir kalıp oluşturduk bu fieldlar zorunlu gönderilmek zorunda
 
-    //Aşağıdaki örnekte 3 string ve 2 int değer ile 2 farklı constructor oluşturabildik ve bunların isimleri farklı dikkat et!
+    //Aşağıdaki örnekte 3 string ve 2 int değer ile 2 farklı constructor oluşturabildik ve method isimleri farklı dikkat et!
+    //constructor isimleri aynı olmak zorunda olduğu için bu yapıyı kurup kendi kalıplarını yapamassın
+    //Builder da istediğin ismi verebilirsin metoda ve parametreleri aynı sırada aynı tipte kurucu metod yazmış oluyorsun.
     /*
     * Parametre geçilen il, ilçe, mahalle, binayili, odasayisi zorunlu olması istendiği için bu şekilde yazıldı.
     * ve zorunlu olması istendiği dışarıdan da tekrar değiştirelememesi için bunların setterları kaldırıldı.

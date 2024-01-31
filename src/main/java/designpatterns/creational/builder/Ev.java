@@ -2,6 +2,7 @@ package designpatterns.creational.builder;
 
 public class Ev {
 
+    //Fazla field i olan nesnelerde daha çok kullanımı tavsiye edilir.
     private String il;
     private String ilce;
     private String mahalle;

@@ -8,6 +8,7 @@ public class Emlakci {
 
         //Yöntem 1
         //Bu yöntemi kullanırsan da zorunlu alanlar olabilir bu class için ve programcı bunu setlemeyi unutabilir boş geçebilir yada hiç bir öz niteliğini doldurmayabilir.
+        //Nesne kararsız olmuş olur zorunlu tutamıyorsun bu yöntemde
         Ev ev1 = new Ev();
         ev1.setIl("Ankara");
         ev1.setIlce("YeniMahalle");
@@ -19,7 +20,7 @@ public class Emlakci {
         //Yöntem 2
         //Bu yöntemin kötü yanları:
         //1-) örneğin dublex olmayan evleri tanımlarken her seferinde bu evlerin dublex olmadığını belirtmek için false değerini yazman lazım.
-        //2-) Ev.java:48 de açıklandı.
+        //2-) Ev.java:48 de açıklandı. Parametreleri aynı farklı isimde constructur oluşturamazsın.
         //3-) Bu yöntemde Ev classına ait constructur da hangi sırayla parametleri geçmen gerektiğini bilmen gerekiyor önce il sonra ilçe mahalle gibi bu kod okunurluğunu azaltır.Builder da nokta yı koyunca tüm setler gelir.
 
 
